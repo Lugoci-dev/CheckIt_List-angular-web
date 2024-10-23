@@ -1,0 +1,53 @@
+
+.navbar-holder{
+  /* background-image: url(../assets/bg-header-desktop.svg); */
+  /* background-color: var(--Desaturated-Dark-Cyan); */
+  backdrop-filter: blur(10px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.user-holder{
+  display: flex;
+  margin-right: 8px;
+}
+.user-holder i{
+  color: var(--Very-Dark-Grayish-Cyan);
+}
+
+.user-holder button{
+  font-size: 1.2rem;
+  border: none;
+  /* border-right: 1px solid var(--Dark-Grayish-Cyan); */
+  background-color: transparent;
+  margin: 8px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.navegation-tree{
+  width: 100%;
+  align-self: self-end;
+}
+
+.user{
+  display: flex;
+  /* flex-direction: column; */
+  /* max-width: 60px; */
+  /* overflow: hidden; */
+  align-items: center;
+}
+
+.user p{
+  margin: 0%;
+  /* white-space: nowrap; */
+  display: none;
+  font-size: .8rem;
+}
+
+.user-button i{
+  font-size: 2.5rem;
+}
+

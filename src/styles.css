@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --Light-Grayish-Cyan: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-filter: hsl(180, 31%, 95%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+}
+body{
+  /* background-image: url('./app/core/assets/bg-header-desktop.svg'); */
+  /* background-color: var(--Desaturated-Dark-Cyan); */
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--Very-Dark-Grayish-Cyan);
+  background-color: var(--Light-Grayish-Cyan);
+}
+app-root{
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  box-sizing: border-box;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+
+  grid-template-columns: 1fr 6fr;
+}

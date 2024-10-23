@@ -1,0 +1,13 @@
+.body-holder{
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  /* background-color: white; */
+  height: 100%;
+  overflow-y: auto;
+  /* border-left: 3px solid var(--Desaturated-Dark-Cyan); */
+  padding-left: 8px;
+  padding-bottom: 64px;
+}
+h1{
+  margin: 0%;
+}

@@ -1,0 +1,30 @@
+<article class="item  " *ngFor="let item of listProject"  [ngClass]="{
+  'i-expired': item.expirationStatus == 'expired',
+  'i-completed': item.expirationStatus == 'completed'
+  }">
+  <div *ngIf="item.importance == 'important' " class="i-state important" > </div>
+  <div *ngIf="item.expirationStatus == 'completed' " class="i-state completed" > </div>
+  <div *ngIf="item.expirationStatus == 'expired' " class="i-state expired" > </div>
+  <div class="i-body" >
+    <section class="title-holder">
+      <p class="domain" >{{item.folderName}}/
+        <span class="tag-holder" >
+          <span class="new" >{{item.importance}}</span>
+          <span class="featured" >{{item.expirationStatus}}</span>
+        </span>
+      </p>
+      <p class="title" >{{item.projectTitle}}</p>
+      <p class="usues" >
+        <span>{{item.resolvedTaskCount}}/{{item.taskCount}} cmplt</span>.
+        <span>{{item.importantTaskCount}} import</span>.
+        <span>{{item.deadline}}</span>
+      </p>
+    </section>
+
+    <div class="separtor" > <hr></div>
+
+    <section class="filter-holder" >
+      <button onclick="filterList(this)" *ngFor="let tag of item.tags">{{tag}}</button>
+    </section>
+  </div>
+</article>

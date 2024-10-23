@@ -1,0 +1,79 @@
+
+.sidebar-holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid var(--Desaturated-Dark-Cyan);
+  /* width: 20%; */
+  padding-right: 4px;
+}
+
+app-sidebar{
+  height: 100%;
+  min-width: 250px;
+  box-sizing: border-box;
+  /* padding: 8px; */
+}
+
+.futter-sidebar{
+  /* backdrop-filter: blur(10px); */
+  display: flex;
+  height: 35px;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(./core/assets/bg-header-mobile.svg);
+  /* background-color: var(--Desaturated-Dark-Cyan); */
+}
+.futter-sidebar button{
+  border: none;
+  color: var(--Very-Dark-Grayish-Cyan);
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(16px);
+}
+.futter-sidebar button:hover{
+
+  /* border: none; */
+
+
+  color: rgb(217, 242, 242);
+  font-weight: 600;
+  /* background-color: transparent; */
+}
+.futter-sidebar .exit-b{
+  text-align: end;
+}
+
+app-navbar{
+  height: 54px;
+  /* display: flex; */
+}
+
+app-body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.body-holder{
+  box-sizing: border-box;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  /* width: 80%; */
+  padding: 8px;
+}
+
+.divisor{
+  padding: 4px 16px;
+  /* border: none; */
+}
+.divisor hr{
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: var(--Desaturated-Dark-Cyan);
+}
